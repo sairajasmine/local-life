@@ -4,7 +4,7 @@ require 'json'
 require 'pry'
 # require 'factual'
 
-def format_request_and_send_api_call(location, region)
+def format_request_and_send_api_call(location)
     loc = location.gsub(" ", "%20")
     # factual = Factual.new("FSSElqWOAa8cUlkxy3AAZUE5seh8I27fG5PtvlIs", "kv0CT3urMAh4rWHMjGJdBoJRraYd6t3LweMBe5ig")
     # factual.table("places-us").filters("$and" => [{"category_ids" => {"$includes_any" => [312, 347]}}, {"locality" => "los angeles"}]).rows
@@ -24,7 +24,7 @@ def make_api_call(request_string)
     # data.each do |thing|
     #     addresses << thing["address"]
     # 
-    
+    country = 
 
     names = {}
     data.each do |place|

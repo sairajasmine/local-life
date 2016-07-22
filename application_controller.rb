@@ -46,11 +46,35 @@ class ApplicationController < Sinatra::Base
   
   post '/results' do
     @user_input = params[:result]
-		@api_response = format_request_and_send_api_call(@user_input, @user_input)
+		@api_response = format_request_and_send_api_call("New York")
 		@names_hash = @api_response
 		# @addresses = @api_response[1]
     erb :base3, :layout => :base3
   end
+  
+   post '/london_results' do
+     @user_input = params[:result]
+		 @api_response = format_request_and_send_api_call("London")
+		 @names_hash = @api_response
+		 @addresses = @api_response[1]
+    erb :london_results
+   end
+   
+     post '/paris_results' do
+     @user_input = params[:result]
+		 @api_response = format_request_and_send_api_call("Paris")
+		 @names_hash = @api_response
+		 @addresses = @api_response[1]
+    erb :paris_results
+   end
+   
+     post '/tokyo_results' do
+     @user_input = params[:result]
+		 @api_response = format_request_and_send_api_call("Tokyo")
+		 @names_hash = @api_response
+		 @addresses = @api_response[1]
+    erb :tokyo_results
+   end
   
  
 end
