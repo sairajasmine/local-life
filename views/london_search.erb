@@ -1,6 +1,3 @@
-<!-- The purpose of this base.erb is that it provides a layout that you can use for EVERY page. -->
-<!DOCTYPE html>
-<html>
 <head>
   <title><%=@title%></title>
   		<meta charset="utf-8" />
@@ -14,6 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
+		
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -22,10 +20,11 @@
 						<div class="inner">
 
 							<!-- Logo -->
-								<!--<a href="index.html" class="logo">-->
-									<center><span class="symbol"><img src="images/LogoMakr.png" alt="" /></span></center>
-									<!--<span class="title">Local Life</span>-->
-								<!--</a>-->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/LogoMakr.png" alt="" /></span>
+								</a>
+								
+							<h1>London</h1>
 
 							<!-- Nav -->
 								<!--<nav>-->
@@ -45,7 +44,7 @@
 					<!--		<li><a href="generic.html">Ipsum veroeros</a></li>-->
 					<!--		<li><a href="generic.html">Tempus etiam</a></li>-->
 					<!--		<li><a href="generic.html">Consequat dolor</a></li>-->
-					<!--		<li><a href="elements.html">Elements</a></li>-->
+					<!--		<li><a href="elements.html">Elements</a></li>f-->
 					<!--	</ul>-->
 					<!--</nav>-->
 
@@ -53,77 +52,90 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<center><h1>Not your traditional travel site.<br/></center>
-								<a href="http://html5up.net"></a></h1>
-							<center><p>Instead of providing information on typical tourist hotspots like many other travel websites, Local Life provides users insight into each city's perks and charm as a local. Our users thrive on ambitious exploration -- we are a global community. Travelers and providers will develop more personalized and intimate relationships rather than large traveling agencies. </p></center>
+<!--hidden_field(:signup, :pass_confirm)-->
+<!--# => <input type="hidden" id="signup_pass_confirm" name="signup[pass_confirm]" value="#{@signup.pass_confirm}" />-->
+
+<!--hidden_field(:post, :tag_list)-->
+<!--# => <input type="hidden" id="post_tag_list" name="post[tag_list]" value="#{@post.tag_list}" />-->
+
+<!--hidden_field(:user, :token)-->
+<!--# => <input type="hidden" id="user_token" name="user[token]" value="#{@user.token}" />-->
+								<form method="POST" action="/results">
+                                	<p>What are you looking for?</p>
+                                	<textarea name="result"></textarea>
+                                	<input type="submit" src="http://www.letsgo.org.nz/Portals/0/Images/Events/LetsGoSymbolsSm.jpg">
+                                </form>
+								<!--<h1>Not your traditional travel site.<br />-->
+								<!--<a href="http://html5up.net"></a></h1>-->
+								<!--<p>Local Life is a platform that provides its users insight on how the locals live in popular vacation cities. Instead of providing information about typicaal toursit hotspots, Local Life gives local insight on each</p>-->
 							</header>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/nyc.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>New York</h2>
-										<div class="content">
+							<!--<section class="tiles">-->
+							<!--	<article class="style1">-->
+							<!--		<span class="image">-->
+							<!--			<img src="images/nyc.jpg" alt="" />-->
+							<!--		</span>-->
+							<!--		<a href="generic.html">-->
+							<!--			<h2>New York City</h2>-->
+							<!--			<div class="content">-->
 											<!--<p>Explore </p>-->
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/london.jpg" alt="" />
-									</span>
-									<a href="london_search.html">
-										<h2>London</h2>
-										<div class="content">
+							<!--			</div>-->
+							<!--		</a>-->
+							<!--	</article>-->
+							<!--	<article class="style2">-->
+							<!--		<span class="image">-->
+							<!--			<img src="images/london.jpg" alt="" />-->
+							<!--		</span>-->
+							<!--		<a href="generic.html">-->
+							<!--			<h2>London</h2>-->
+							<!--			<div class="content">-->
 											<!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/sydney.jpg" alt="" />
-									</span>
-									<a href="sydney_search.html">
-										<h2>Sydney</h2>
-										<div class="content">
+							<!--			</div>-->
+							<!--		</a>-->
+							<!--	</article>-->
+							<!--	<article class="style3">-->
+							<!--		<span class="image">-->
+							<!--			<img src="images/sydney.jpg" alt="" />-->
+							<!--		</span>-->
+							<!--		<a href="generic.html">-->
+							<!--			<h2>Sydney</h2>-->
+							<!--			<div class="content">-->
 											<!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/rsz_6-tokyo.jpg" alt="" />
-									</span>
-									<a href="tokyo_search.html">
-										<h2>Tokyo</h2>
-										<div class="content">
+							<!--			</div>-->
+							<!--		</a>-->
+							<!--	</article>-->
+							<!--	<article class="style4">-->
+							<!--		<span class="image">-->
+							<!--			<img src="images/rsz_6-tokyo.jpg" alt="" />-->
+							<!--		</span>-->
+							<!--		<a href="generic.html">-->
+							<!--			<h2>Tokyo</h2>-->
+							<!--			<div class="content">-->
 											<!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/rsz_rio.jpg" alt="" />
-									</span>
-									<a href="rio_search.html">
-										<h2>Rio de Janeiro</h2>
-										<div class="content">
+							<!--			</div>-->
+							<!--		</a>-->
+							<!--	</article>-->
+							<!--	<article class="style5">-->
+							<!--		<span class="image">-->
+							<!--			<img src="images/rsz_rio.jpg" alt="" />-->
+							<!--		</span>-->
+							<!--		<a href="generic.html">-->
+							<!--			<h2>Rio de Janeiro</h2>-->
+							<!--			<div class="content">-->
 											<!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/rsz_paris.jpg" alt="" />
-									</span>
-									<a href="paris_search.html">
-										<h2>Paris</h2>
-										<div class="content">
+							<!--			</div>-->
+							<!--		</a>-->
+							<!--	</article>-->
+							<!--	<article class="style6">-->
+							<!--		<span class="image">-->
+							<!--			<img src="images/rsz_paris.jpg" alt="" />-->
+							<!--		</span>-->
+							<!--		<a href="generic.html">-->
+							<!--			<h2>Paris</h2>-->
+							<!--			<div class="content">-->
 											<!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
-										</div>
-									</a>
-							</section>
+							<!--			</div>-->
+							<!--		</a>-->
+							<!--</section>-->
 						</div>
 					</div>
 
@@ -146,7 +158,7 @@
 							<!--			<li><input type="submit" value="Send" class="special" /></li>-->
 							<!--		</ul>-->
 							<!--	</form>-->
-							<!--</section>-->
+							</section>
 							<section>
 								<h2>Follow</h2>
 								<ul class="icons">
@@ -161,7 +173,7 @@
 								</ul>
 							</section>
 							<ul class="copyright">
-								<!--<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
