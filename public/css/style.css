@@ -21,6 +21,8 @@
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
+	
+	
 
 	body {
 		line-height: 1;
@@ -3355,3 +3357,7 @@
 			}
 
 		}
+ol {
+	text-shadow: 10 0 0px gray; 
+	color: rgb(146, 244, 24);
+}

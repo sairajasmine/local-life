@@ -32,8 +32,8 @@ class ApplicationController < Sinatra::Base
     erb :sydney_search
   end
   
-  get '/tokyo_search.html' do
-    erb :tokyo_search
+  get '/singapore_search.html' do
+    erb :singapore_search
   end
   
   get '/rio_search.html' do
@@ -68,11 +68,11 @@ class ApplicationController < Sinatra::Base
     erb :paris_results
    end
    
-     post '/tokyo_results' do
+     post '/singapore_results' do
      @user_input = params[:result]
-		 @api_response = format_request_and_send_api_call("Tokyo")
+		 @api_response = format_request_and_send_api_call("Singapore")
 		 @names_hash = @api_response
-    erb :tokyo_results
+    erb :singapore_results
    end
    
    post '/rio_results' do

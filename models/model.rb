@@ -24,7 +24,7 @@ def make_api_call(request_string)
     # data.each do |thing|
     #     addresses << thing["address"]
     # 
-    country = 
+    
 
     names = {}
     data.each do |place|
