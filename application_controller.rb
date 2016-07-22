@@ -46,7 +46,7 @@ class ApplicationController < Sinatra::Base
   
   post '/results' do
     @user_input = params[:result]
-		@api_response = format_request_and_send_api_call("New York")
+		@api_response = format_request_and_send_api_call("New York", @user_input)
 		@names_hash = @api_response
 		# @addresses = @api_response[1]
     erb :base3, :layout => :base3
@@ -54,7 +54,7 @@ class ApplicationController < Sinatra::Base
   
    post '/london_results' do
      @user_input = params[:result]
-		 @api_response = format_request_and_send_api_call("London")
+		 @api_response = format_request_and_send_api_call("London", @user_input)
 		 @names_hash = @api_response
 		 @addresses = @api_response[1]
     erb :london_results
@@ -62,7 +62,7 @@ class ApplicationController < Sinatra::Base
    
      post '/paris_results' do
      @user_input = params[:result]
-		 @api_response = format_request_and_send_api_call("Paris")
+		 @api_response = format_request_and_send_api_call("Paris", @user_input)
 		 @names_hash = @api_response
 		 @addresses = @api_response[1]
     erb :paris_results
@@ -70,14 +70,14 @@ class ApplicationController < Sinatra::Base
    
      post '/singapore_results' do
      @user_input = params[:result]
-		 @api_response = format_request_and_send_api_call("Singapore")
+		 @api_response = format_request_and_send_api_call("Singapore", @user_input)
 		 @names_hash = @api_response
     erb :singapore_results
    end
    
    post '/rio_results' do
      @user_input = params[:result]
-		 @api_response = format_request_and_send_api_call("Rio de Janeiro")
+		 @api_response = format_request_and_send_api_call("Rio de Janeiro", @user_input)
 		 @names_hash = @api_response
 		 @addresses = @api_response[1]
     erb :rio_results
@@ -85,7 +85,7 @@ class ApplicationController < Sinatra::Base
    
      post '/sydney_results' do
      @user_input = params[:result]
-		 @api_response = format_request_and_send_api_call("Sydney")
+		 @api_response = format_request_and_send_api_call("Sydney", @user_input)
 		 @names_hash = @api_response
 		 @addresses = @api_response[1]
     erb :sydney_results

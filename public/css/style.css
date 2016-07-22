@@ -3358,6 +3358,11 @@
 
 		}
 ol {
-	text-shadow: 10 0 0px gray; 
-	color: rgb(146, 244, 24);
+	text-shadow: 2px 2px rgb(146, 244, 24); 
+	color: rgb(35,35,35);
+	font-size: 125%;
+}
+
+h1 {
+	margin-left:33px;
 }
