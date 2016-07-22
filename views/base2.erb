@@ -23,6 +23,8 @@
 								<a href="index.html" class="logo">
 									<span class="symbol"><img src="images/LogoMakr.png" alt="" /></span>
 								</a>
+								
+							<h1>New York</h1>
 
 							<!-- Nav -->
 								<!--<nav>-->
@@ -50,10 +52,19 @@
 					<div id="main">
 						<div class="inner">
 							<header>
+<!--hidden_field(:signup, :pass_confirm)-->
+<!--# => <input type="hidden" id="signup_pass_confirm" name="signup[pass_confirm]" value="#{@signup.pass_confirm}" />-->
+
+<!--hidden_field(:post, :tag_list)-->
+<!--# => <input type="hidden" id="post_tag_list" name="post[tag_list]" value="#{@post.tag_list}" />-->
+
+<!--hidden_field(:user, :token)-->
+<!--# => <input type="hidden" id="user_token" name="user[token]" value="#{@user.token}" />-->
 								<form method="POST" action="/results">
-                                <p>What are you looking for? (ie. coffee, pasta, etc.)</p>
-                                <textarea name="result"></textarea>
-                                <input type = "submit">
+                                	<p>What are you looking for?</p>
+                                	<textarea name="result"></textarea>
+                                	<input type="submit" src="http://www.letsgo.org.nz/Portals/0/Images/Events/LetsGoSymbolsSm.jpg">
+                                </form>
 								<!--<h1>Not your traditional travel site.<br />-->
 								<!--<a href="http://html5up.net"></a></h1>-->
 								<!--<p>Local Life is a platform that provides its users insight on how the locals live in popular vacation cities. Instead of providing information about typicaal toursit hotspots, Local Life gives local insight on each</p>-->
