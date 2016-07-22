@@ -3355,14 +3355,13 @@
 			#wrapper > * > .inner {
 				padding: 0 1.25em;
 			}
-
-		}
-ol {
-	text-shadow: 2px 2px rgb(146, 244, 24); 
-	color: rgb(35,35,35);
-	font-size: 125%;
 }
 
-h1 {
-	margin-left:33px;
-}
+
+
+		
+/*ol {*/
+/*	text-shadow: 2px 2px rgb(146, 244, 24); */
+/*	color: rgb(35,35,35);*/
+/*	font-size: 125%;*/
+/*}*/

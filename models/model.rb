@@ -17,7 +17,7 @@ def make_api_call(request_string)
     uri = URI(request_string)
     response = Net::HTTP.get(uri)
     formatted_data = JSON.parse(response)
-
+    p formatted_data
     data = formatted_data["response"]["data"]
     
     # addresses = []
