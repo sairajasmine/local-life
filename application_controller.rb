@@ -46,7 +46,7 @@ class ApplicationController < Sinatra::Base
   
   post '/results' do
     @user_input = params[:result]
-		@api_response = format_request_and_send_api_call(@user_input)
+		@api_response = format_request_and_send_api_call(@user_input, @user_input)
 		@names_hash = @api_response
 		# @addresses = @api_response[1]
     erb :base3, :layout => :base3

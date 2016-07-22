@@ -1,0 +1,186 @@
+<head>
+  <title><%=@title%></title>
+  		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		    <link rel="stylesheet" href="css/style.css" />
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />  
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/LogoMakr.png" alt="" /></span>
+								</a>
+								
+							<h1>Paris</h1>
+
+							<!-- Nav -->
+								<!--<nav>-->
+								<!--	<ul>-->
+								<!--		<li><a href="#menu">Menu</a></li>-->
+								<!--	</ul>-->
+								<!--</nav>-->
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<!--<nav id="menu">-->
+					<!--	<h2>Menu</h2>-->
+					<!--	<ul>-->
+					<!--		<li><a href="index.html">Home</a></li>-->
+					<!--		<li><a href="generic.html">Ipsum veroeros</a></li>-->
+					<!--		<li><a href="generic.html">Tempus etiam</a></li>-->
+					<!--		<li><a href="generic.html">Consequat dolor</a></li>-->
+					<!--		<li><a href="elements.html">Elements</a></li>-->
+					<!--	</ul>-->
+					<!--</nav>-->
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+<!--hidden_field(:signup, :pass_confirm)-->
+<!--# => <input type="hidden" id="signup_pass_confirm" name="signup[pass_confirm]" value="#{@signup.pass_confirm}" />-->
+
+<!--hidden_field(:post, :tag_list)-->
+<!--# => <input type="hidden" id="post_tag_list" name="post[tag_list]" value="#{@post.tag_list}" />-->
+
+<!--hidden_field(:user, :token)-->
+<!--# => <input type="hidden" id="user_token" name="user[token]" value="#{@user.token}" />-->
+								<form method="POST" action="/results">
+                                	<p>What are you looking for?</p>
+                                	<textarea name="result"></textarea>
+                                	<input type="submit" src="http://www.letsgo.org.nz/Portals/0/Images/Events/LetsGoSymbolsSm.jpg">
+                                </form>
+								<!--<h1>Not your traditional travel site.<br />-->
+								<!--<a href="http://html5up.net"></a></h1>-->
+								<!--<p>Local Life is a platform that provides its users insight on how the locals live in popular vacation cities. Instead of providing information about typicaal toursit hotspots, Local Life gives local insight on each</p>-->
+							</header>
+							<!--<section class="tiles">-->
+							<!--	<article class="style1">-->
+							<!--		<span class="image">-->
+							<!--			<img src="images/nyc.jpg" alt="" />-->
+							<!--		</span>-->
+							<!--		<a href="generic.html">-->
+							<!--			<h2>New York City</h2>-->
+							<!--			<div class="content">-->
+											<!--<p>Explore </p>-->
+							<!--			</div>-->
+							<!--		</a>-->
+							<!--	</article>-->
+							<!--	<article class="style2">-->
+							<!--		<span class="image">-->
+							<!--			<img src="images/london.jpg" alt="" />-->
+							<!--		</span>-->
+							<!--		<a href="generic.html">-->
+							<!--			<h2>London</h2>-->
+							<!--			<div class="content">-->
+											<!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
+							<!--			</div>-->
+							<!--		</a>-->
+							<!--	</article>-->
+							<!--	<article class="style3">-->
+							<!--		<span class="image">-->
+							<!--			<img src="images/sydney.jpg" alt="" />-->
+							<!--		</span>-->
+							<!--		<a href="generic.html">-->
+							<!--			<h2>Sydney</h2>-->
+							<!--			<div class="content">-->
+											<!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
+							<!--			</div>-->
+							<!--		</a>-->
+							<!--	</article>-->
+							<!--	<article class="style4">-->
+							<!--		<span class="image">-->
+							<!--			<img src="images/rsz_6-tokyo.jpg" alt="" />-->
+							<!--		</span>-->
+							<!--		<a href="generic.html">-->
+							<!--			<h2>Tokyo</h2>-->
+							<!--			<div class="content">-->
+											<!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
+							<!--			</div>-->
+							<!--		</a>-->
+							<!--	</article>-->
+							<!--	<article class="style5">-->
+							<!--		<span class="image">-->
+							<!--			<img src="images/rsz_rio.jpg" alt="" />-->
+							<!--		</span>-->
+							<!--		<a href="generic.html">-->
+							<!--			<h2>Rio de Janeiro</h2>-->
+							<!--			<div class="content">-->
+											<!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
+							<!--			</div>-->
+							<!--		</a>-->
+							<!--	</article>-->
+							<!--	<article class="style6">-->
+							<!--		<span class="image">-->
+							<!--			<img src="images/rsz_paris.jpg" alt="" />-->
+							<!--		</span>-->
+							<!--		<a href="generic.html">-->
+							<!--			<h2>Paris</h2>-->
+							<!--			<div class="content">-->
+											<!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
+							<!--			</div>-->
+							<!--		</a>-->
+							<!--</section>-->
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!--<section>-->
+							<!--	<h2>Get in touch</h2>-->
+							<!--	<form method="post" action="#">-->
+							<!--		<div class="field half first">-->
+							<!--			<input type="text" name="name" id="name" placeholder="Name" />-->
+							<!--		</div>-->
+							<!--		<div class="field half">-->
+							<!--			<input type="email" name="email" id="email" placeholder="Email" />-->
+							<!--		</div>-->
+							<!--		<div class="field">-->
+							<!--			<textarea name="message" id="message" placeholder="Message"></textarea>-->
+							<!--		</div>-->
+							<!--		<ul class="actions">-->
+							<!--			<li><input type="submit" value="Send" class="special" /></li>-->
+							<!--		</ul>-->
+							<!--	</form>-->
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+	</body>
+</html>
+</body>
+</html>
